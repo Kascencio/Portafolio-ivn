@@ -1,0 +1,46 @@
+---
+import '../styles/marcas.css';
+
+const Marca = [
+    {
+        logo: "AWS-logo.png",
+        name: "AWS",
+    },
+    {
+        logo: "Azure-logo.png",
+        name: "Azure",
+    },
+    {
+        logo: "cisco-logo.png",
+        name: "Cisco",
+    },
+    {
+        logo: "Dell-Logo-.png",
+        name: "Dell",
+    },
+    {
+        logo: "Fortinet-logo.webp",
+        name: "Fortinet",
+    },
+    {
+        logo: "Lenovo-logo.png",
+        name: "Lenovo",
+    },
+    {
+        logo: "Lutron-logo.png",
+        name: "Lutron",
+    }
+]
+---
+
+<section class="marcas">
+    <ol class="container">
+        {Marca.map((Marca) => 
+        <li>
+        <img class="imgs"  
+        src={`/${Marca.logo}`} 
+        alt={Marca.name} />
+        </li>)}
+    </ol>   
+</section>
+

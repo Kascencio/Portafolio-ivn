@@ -1,0 +1,15 @@
+.imgs{
+    height: 10px;
+}
+
+.marcas{
+
+}
+
+.container{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

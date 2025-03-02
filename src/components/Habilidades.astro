@@ -1,0 +1,73 @@
+---
+const Habilidades_Sistemas = [
+    {
+        title: 'Gestion TI',
+    },
+    {
+        title: 'Redes y Seguridad',
+    },
+    {
+        title: 'Servidores y Seguridad',
+    },
+    {
+        title: 'Computación en la Nube',
+    },
+    {
+        title: 'Ciberseguridad',
+    },
+    {
+        title: 'Gestión de Data Centers',
+    },
+    {
+        title: 'Automatización y CAD',
+    },
+    {
+        title: 'Desarrollo de Proyectos TI',
+    },
+    {
+        title: 'Bases de Datos',
+    }
+]
+
+const Habilidades_Docencia = [
+    {
+        title: 'Educación Tecnológica',
+    },
+    {
+        title: 'Metodologías Innovadoras',
+    },
+    {
+        title: 'Plataformas Educativas',
+    },
+    {
+        title: 'Ofimática Avanzada',
+    },
+    {
+        title: 'Certificaiones Tecnológicas',
+    },
+    {
+        title: 'Ciberseguridad Educativa',
+    },
+    {
+        title: 'Inclusión y Educación Digital',
+    }
+]
+---
+
+<section class="habilidades">
+    <h4>Habilidades</h4>
+    <div class="container-habilidades">
+        <div class="container-habilidades-sistemas">
+            <h5>Sistemas e Informatica</h5>
+            {Habilidades_Sistemas.map((habilidad) => (
+                <p class="">{habilidad.title}</p>
+            ))}
+        </div>
+        <div class="container-habilidades-docencia">
+            <h5>Docencia y Capacitación</h5>
+            {Habilidades_Docencia.map((habilidad) => (
+                <p>{habilidad.title}</p>
+            ))}
+        </div>
+    </div>
+</section>

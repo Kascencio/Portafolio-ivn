@@ -1,0 +1,82 @@
+---
+import '../styles/Works.css';
+
+const Jobs = [
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    },
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    },
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    },
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    },
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    },
+    {
+        title: 'Desarrollador Web',
+        company: 'Cinepolis',
+        description: 'Desarrollo de aplicaciones web',
+        date_init: '2020',
+        date_finish: '2020',
+        image: '/AWS-logo.png',
+        alt: 'Cinepolis',
+        color: 'bg-red-500',
+    }
+]
+---
+
+<section class="jobs-list">
+    <div class="container-job">
+        {Jobs.map((job) =>
+          <div class="information-job">
+            <h3>{job.title}</h3>
+            <p>{job.description}</p>
+            <p>{job.company}</p>
+          </div>  
+          <div class="ilustration-job">
+            <img  class="image-job" src={job.image} alt={job.alt} />
+            <p>{job.date_init} - {job.date_finish}</p>
+          </div>
+        )}
+    </div>
+</section>
