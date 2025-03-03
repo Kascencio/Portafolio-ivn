@@ -1,9 +1,11 @@
 .imgs{
-    height: 10px;
+    height: 100px;
 }
 
 .marcas{
-
+    height: auto;
+    width: auto;
+    overflow: hidden;
 }
 
 .container{
@@ -12,4 +14,41 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    animation: scroll 40s liner infinite;
+    -webkit-animation: scroll 35s ease-in-out infinite;
+    width:calc(90px * 14);
+    gap: 20px;
+}
+
+.slide{
+    width: 100px;
+}
+
+.slide .imgs{
+    width: 100%;
+    aspect-ratio: auto 3/4;
+    object-fit: contain;
+}
+
+.marcas::before{
+    content: "";
+    width: 50px;
+    height: 90px;
+    padding: 30px;
+    z-index: 10;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+}
+
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(-100);
+        transform: translateX(-100);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-80px * 14));
+        transform: translateX(calc(-80px * 14));
+    }
 }

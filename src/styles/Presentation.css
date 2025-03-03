@@ -1,7 +1,12 @@
+:root{
+    --font-name:'Lustria', serif;
+    --font-main:"Poppins", sans-serif;
+}
+
 
 .presentation{
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +15,7 @@
 
 .photo{
     display: inline-block;
+    z-index: 1;
     position: relative;
     aspect-ratio: 16/9;
     width: 230px;
@@ -19,6 +25,65 @@
 }
 
 .information_presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    
+}
+
+.information_presentation .name{
+    font-size: 2rem;
+    font-family: var(--font-name);
+    font-weight: 500;
+}
+
+.information_presentation .description{
+    font-size: 1.2rem;
+    font-family: var(--font-main);
+    font-weight: 200;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.information_presentation .badge{
+    margin-top: 10px;
+    background-color: black;
+    width: 60%;
+    padding: 10px;
+    font-size: .6rem;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.information_presentation .badge h2{
+    color: #FFFFFF;
+    font-family: var(--font-main);
+    font-weight: 500;
+}
+
+.badge::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 15px;
+    animation: blink 4s infinite;
+}
+
+@keyframes blink{
+    0%{
+        transform: scale(.9);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(.9);
+    }
 }

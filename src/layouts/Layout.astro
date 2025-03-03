@@ -17,7 +17,7 @@ import Footer from '../components/Footer.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Porfolio Ivan</title>
 	</head>
-	<body class="relative text-black dark:text-white">
+	<body>
 		<Header />
 		<Presentation />
 		<Marcas />
@@ -27,16 +27,61 @@ import Footer from '../components/Footer.astro';
 		<slot />
 	</body>
 	<style is:global>
-		
+		:root{
+			
+		}
 	</style>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		
-	}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: -10;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: rgba(255, 140, 0, 0.5); /* Color naranja */
+  opacity: 0.5;
+  filter: blur(80px);
+  animation: floatingBlob 15s ease-in-out infinite;
+  z-index: -5;
+}
+
+@keyframes floatingBlob {
+  0% {
+    transform: translate(-30%, 20%) scale(1);
+  }
+  25% {
+    transform: translate(-25%, 15%) scale(1.2);
+  }
+  50% {
+    transform: translate(-35%, 25%) scale(0.9);
+  }
+  75% {
+    transform: translate(-20%, 10%) scale(1.1);
+  }
+  100% {
+    transform: translate(-30%, 20%) scale(1);
+  }
+}
 </style>

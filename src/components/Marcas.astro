@@ -29,6 +29,34 @@ const Marca = [
     {
         logo: "Lutron-logo.png",
         name: "Lutron",
+    }, 
+    {
+        logo: "AWS-logo.png",
+        name: "AWS",
+    },
+    {
+        logo: "Azure-logo.png",
+        name: "Azure",
+    },
+    {
+        logo: "cisco-logo.png",
+        name: "Cisco",
+    },
+    {
+        logo: "Dell-Logo-.png",
+        name: "Dell",
+    },
+    {
+        logo: "Fortinet-logo.webp",
+        name: "Fortinet",
+    },
+    {
+        logo: "Lenovo-logo.png",
+        name: "Lenovo",
+    },
+    {
+        logo: "Lutron-logo.png",
+        name: "Lutron",
     }
 ]
 ---
@@ -36,7 +64,7 @@ const Marca = [
 <section class="marcas">
     <ol class="container">
         {Marca.map((Marca) => 
-        <li>
+        <li class="slide">
         <img class="imgs"  
         src={`/${Marca.logo}`} 
         alt={Marca.name} />
