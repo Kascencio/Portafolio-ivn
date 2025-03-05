@@ -1,3 +1,61 @@
+:root{
+    --font-name:'Lustria', serif;
+    --font-main:"Poppins", sans-serif;
+}
+
+.jobs-list{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/**
+.container-job{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 35s ease-in-out infinite;
+}
+*/
+
+.container-job{
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--font-main);
+}
+
+.information-job h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.information-job .description-job{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #000000;
+}
+
+.information-job .company-job{
+    font-size: 1rem;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    font-weight: 500;
+    border-radius: 300px;
+}
+
 .image-job{
-    height:50px;
+    display: none;
 }
