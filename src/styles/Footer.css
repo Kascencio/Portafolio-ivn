@@ -1,0 +1,39 @@
+:root{
+    --font-name:'Lustria', serif;
+    --font-main:"Poppins", sans-serif;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+
+.footer-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;  
+    font-family: var(--font-main);
+    background: rgb(3,6,19);
+    background: linear-gradient(177deg, rgba(3,6,19,1) 0%, rgba(94,135,79,1) 100%);
+    color: #D1EAFA;
+    padding: 20px;
+}
+
+.media-socials a{
+    color: #D1EAFA;
+    font-size: .8rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
