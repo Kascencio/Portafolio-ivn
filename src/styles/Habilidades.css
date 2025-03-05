@@ -1,0 +1,60 @@
+:root{
+    --font-name:'Lustria', serif;
+    --font-main:"Poppins", sans-serif;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    height: auto;
+}
+
+.habilidades h4{
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.container-habilidades h5{
+    font-family: var(--font-main);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: .2rem;
+}
+
+.container-habilidades-main{
+    weight: 80%;
+    gap: .5rem;
+    background-color: #D1EAFA;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.container-h{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .6rem;
+}
+
+.container-habilidades-main p{
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #3F6C88;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: .1rem;
+}
