@@ -23,7 +23,7 @@
     font-family: var(--font-main);
     font-size: 1.4rem;
     font-weight: 500;
-    color: #333;
+    color: #3F6C88;
     margin-bottom: .2rem;
 }
 
@@ -50,7 +50,7 @@
     font-family: var(--font-main);
     font-size: 1rem;
     font-weight: 300;
-    color: #fff;
+    color: #FFFFFF;
     background-color: #3F6C88;
     padding: 0.5rem;
     border-radius: 5px;
@@ -68,10 +68,17 @@
         width: 80%;
     }
 
+    .container-habilidades-main .title{
+        text-align: left;
+    }
+
     .container-habilidades{
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        align-items: end;
+        flex-direction: row;
+        gap: 1rem;
+        overflow-x: scroll;
+        scroll-margin-left: 1rem;
     }
 }

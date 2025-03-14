@@ -9,15 +9,17 @@
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
 .container-job{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
     font-family: var(--font-main);
 }
@@ -58,6 +60,21 @@
 }
 
 @media screen and (min-width: 768px){
+    .image-job{
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .information-job{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            
+    }
+
     
 }
 
