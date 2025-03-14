@@ -10,7 +10,8 @@
     font-family: var(--font-main);
     align-items: center;
     padding: 15px 20px;
-    position: relative;
+    position: sticky;
+    z-index: 1;
   }
   
   .header h1 {
